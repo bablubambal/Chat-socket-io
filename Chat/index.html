@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- connection to the stand alone app of the socket io 
+    defer = means the script will run when dom is ready 
+    -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>B-Chat</title>
+</head>
+
+<body>
+    <nav>
+        <img src="log.png" class="logo">
+        <h1 style="text-align: center;">Welcome to B-Chat</h1>
+    </nav>
+
+    <div class="container">
+
+        <!-- <div class="message right">Bablu : Chat here</div>
+        
+       
+     <div class="message left">Bambal : Bambabl online </div> -->
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Enter your message" />
+            <button type="submit" id="send">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
